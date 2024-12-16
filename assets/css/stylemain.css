@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.corpo {
+    padding: 5px;
+
+}
+
+.divAddCorpo {
+    border: 1 solid #000;
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: justify;
+    gap: 10px;
+    padding: 10px;
+    width: 400px;
+    margin: auto;
+}
+
+.corpo {
+    text-align: center;
+}
+
+.comandas {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+    padding: 10px;
+    
+}
+
+.itens {
+    background-color: lightgray;
+    height: auto;
+    width: auto;
+    line-height: auto;
+    border-radius: 20px;
+    text-align: justify;
+    padding: 10px;
+    gap: 10px;
+    border: #000 1px solid;
+}
+
+.cdg {
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px;
+    outline: none;
+}
+
+.cdgBt {
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.cdgBt a {
+    color: black;
+}
+
+.menuIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.inputBt {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+#autocomplete-list {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+#buttonAdd1 {
+    background-color: lightgray;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+@media print {
+
+    .itens {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        word-wrap: break-word;
+        border: none;
+    }
+
+    .inputBt,
+    .inputs,
+    #adiciondo,
+    .menuIcons {
+        visibility: hidden;
+    }
+
+}
+
+@media(max-width: 430px) {
+
+    .divAddCorpo,
+    #autocomplete-list {
+        width: auto;
+        max-width: none;
+    }
+
+    .divAddCorpo {
+        margin: 0%;
+    }
+
+}
